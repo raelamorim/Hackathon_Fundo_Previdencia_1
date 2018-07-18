@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>.::Pesquisa Posição cliente::.</title>
+</head>
+<body>
+	<form method="post" th:action="@{../posicao/listaPosicao}">
+		<table>
+			<tr>
+				<td>
+					Nome:
+				</td>
+				<td>
+					<input type="text" id="nome" /> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Nº documento:
+				</td>
+				<td>
+					<input type="text" id="No_Documento" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Codigo Ativo:
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		<input type="submit" value="Pesquisar">
+		
+	</form>
+</body>
+</html>

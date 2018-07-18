@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>.::Consulta Segmento::.</title>
+<link rel="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" style="stylesheets" />
+<script type="text/javascript"  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript"  src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+function pesquisa(){
+	var s = document.getElementById("Segmento");
+	alert(s);
+	$(document).ready(function() {
+	    $('#example').DataTable( {
+	        "ajax": '../segmento/consultaSegmento?sgm=' + s,
+	    } );
+	    columns:
+	    { "data": "Id" },
+        { "data": "numeroDocumento" },
+        { "data": "nome" },
+        { "data": "idSegmento" },
+        { "data": "Segmento" },
+	});
+}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				Segmento:
+			</td>
+			<td>
+				<input type="text" id="Segmento" /> 
+			</td>
+		</tr>		
+	</table>
+	<input type="button" value="Pesquisar" onclick="pesquisa()"/>
+	<div id="montarPesquisa">
+		<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>numeroDocumento</th>
+                <th>nome</th>
+                <th>idSegmento</th>
+                <th>Segmento</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Id</th>
+                <th>numeroDocumento</th>
+                <th>nome</th>
+                <th>idSegmento</th>
+                <th>Segmento</th>
+            </tr>
+        </tfoot>
+    </table>
+	</div>
+</body>
+</html>

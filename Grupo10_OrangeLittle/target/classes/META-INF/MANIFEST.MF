@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Grupo10_OrangeLittle
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Admin
+Implementation-Vendor-Id: com.orangelittle.g10
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Grupo10_OrangeLittle
+Created-By: Maven Integration for Eclipse
+
